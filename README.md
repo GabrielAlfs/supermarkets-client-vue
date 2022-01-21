@@ -17,7 +17,7 @@ Demo: Coming soon...
 * **Build and running**
 
     1. Build using `npm run build` or `yarn build`
-    2. Run the project using `npm run serve` or `yarn serve`
+    2. Preview the project using `npm run preview` or `yarn preview`
 
 ### Technologies used
 
