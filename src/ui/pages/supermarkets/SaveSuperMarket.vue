@@ -310,7 +310,10 @@ export default defineComponent({
         if (editing.value && additionalImages.value.length) {
           removedAdditionalImages.value = [
             ...(additionalImages.value
-              .filter((addImage) => addImage.file === null && addImage.key)
+              .filter(
+                (addImage) =>
+                  addImage.file === null && addImage.url === '' && addImage.key,
+              )
               .map((addImage) => addImage.key) as Array<string>),
           ];
 
