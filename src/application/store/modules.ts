@@ -1,6 +1,6 @@
 const requireModules = import.meta.globEager('./**/*.ts');
 
-const modules = {};
+const modules: Record<string, any> = {};
 
 Object.keys(requireModules).forEach((path) => {
   if (path.includes('index.ts')) return;
